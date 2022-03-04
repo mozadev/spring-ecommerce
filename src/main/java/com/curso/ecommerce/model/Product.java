@@ -1,23 +1,34 @@
 package com.curso.ecommerce.model;
 
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "products")
 public class Product {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nameProduct;
     private String description;
     private String image;
     private double price;
     private int quantity;
+    @ManyToOne
+    private User user;
+
 
     public Product() {
     }
 
-    public Product(Integer id, String nameProduct, String description, String image, double price, int quantity) {
+    public Product(Integer id, String nameProduct, String description, String image, double price, int quantity, User user) {
         this.id = id;
         this.nameProduct = nameProduct;
         this.description = description;
         this.image = image;
         this.price = price;
         this.quantity = quantity;
+        this.user = user;
     }
 
     public Integer getId() {
@@ -68,6 +79,14 @@ public class Product {
         this.quantity = quantity;
     }
 
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
@@ -77,6 +96,7 @@ public class Product {
                 ", image='" + image + '\'' +
                 ", price=" + price +
                 ", quantity=" + quantity +
+                ", user=" + user +
                 '}';
     }
 }
