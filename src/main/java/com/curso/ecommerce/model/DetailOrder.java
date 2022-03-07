@@ -17,7 +17,7 @@ public class DetailOrder {
     @OneToOne
     private Order order;
 
-    @OneToOne
+    @ManyToOne
     private Product product;
 
     public DetailOrder() {

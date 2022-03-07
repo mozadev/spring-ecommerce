@@ -14,6 +14,7 @@ public class Product {
     private String image;
     private double price;
     private int quantity;
+
     @ManyToOne
     private User user;
 
