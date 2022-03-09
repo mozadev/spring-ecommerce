@@ -1,9 +1,8 @@
-package com.curso.ecommerce.service;
+package com.curso.aplicativoWeb.service;
 
-import com.curso.ecommerce.model.Product;
-import com.curso.ecommerce.repository.ProductRepository;
+import com.curso.aplicativoWeb.model.Product;
+import com.curso.aplicativoWeb.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

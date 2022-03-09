@@ -1,4 +1,4 @@
-package com.curso.ecommerce.model;
+package com.curso.aplicativoWeb.model;
 
 
 import javax.persistence.*;
@@ -28,7 +28,7 @@ public class User {
     public User() {
     }
 
-    public User(Integer id, String name, String username, String email, String address, String phone, String type, String password, List<Product> products) {
+    public User(Integer id, String name, String username, String email, String address, String phone, String type, String password) {
         this.id = id;
         this.name = name;
         this.username = username;
@@ -37,7 +37,6 @@ public class User {
         this.phone = phone;
         this.type = type;
         this.password = password;
-        this.products = products;
     }
 
     public Integer getId() {

@@ -1,4 +1,4 @@
-package com.curso.ecommerce.model;
+package com.curso.aplicativoWeb.model;
 
 import javax.persistence.*;
 import java.util.Date;

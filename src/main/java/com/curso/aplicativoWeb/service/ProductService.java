@@ -1,6 +1,6 @@
-package com.curso.ecommerce.service;
+package com.curso.aplicativoWeb.service;
 
-import com.curso.ecommerce.model.Product;
+import com.curso.aplicativoWeb.model.Product;
 
 import java.util.Optional;
 

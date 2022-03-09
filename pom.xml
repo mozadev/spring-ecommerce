@@ -8,11 +8,11 @@
 		<version>2.6.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.curso.ecommerce</groupId>
-	<artifactId>spring-ecommerce</artifactId>
+	<groupId>com.curso.aplicativoWeb</groupId>
+	<artifactId>Aplicativo-web-spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-ecommerce</name>
-	<description>Proyecto ecommerce Spring</description>
+	<name>Aplicativo-web-spring</name>
+	<description>Proyecto Aplicativo web spring</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

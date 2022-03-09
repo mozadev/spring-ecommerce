@@ -1,6 +1,6 @@
-package com.curso.ecommerce.repository;
+package com.curso.aplicativoWeb.repository;
 
-import com.curso.ecommerce.model.Product;
+import com.curso.aplicativoWeb.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
