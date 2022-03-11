@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
 
@@ -49,12 +49,12 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><a class="btn btn-warning" href="">Editar</a></td>
+        <tr th:each="producto : ${cesar} ">
+            <td th:text="${producto.nameProduct}"></td>
+            <td th:text="${producto.description}"></td>
+            <td th:text="${producto.quantity}"></td>
+            <td th:text="${producto.price}"></td>
+            <td><a class="btn btn-warning" th:href="@{productos/edit/{id}(id=${producto.id}) }">Editar</a></td> <!--controller productos, url edit,send id as parameter into url -->
             <td><a class="btn btn-danger" href="">Eliminar</a></td>
         </tr>
         </tbody>
