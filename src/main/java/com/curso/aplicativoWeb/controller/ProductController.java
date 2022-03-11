@@ -69,5 +69,12 @@ public class ProductController {
         return "redirect:/productos";
     }
 
+    @GetMapping("/delete/{id}") // terminacin of url , nos va traer un id el cual vamos a mapear para poder obtener el id o registro que vamos aelimianr
+    public String delete(@PathVariable Integer id){ //@pathvariable make the mapping of the variable  that come of the url for send here at variable that have us as parameter
+        productService.delete(id);
+        return "redirect:/productos";
+    }
+
+
 
 }
